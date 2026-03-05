@@ -1,0 +1,12 @@
+Vin=[0 1 2 3 4 5];
+Vout=[19.6e-6 19.6e-6 0.11 0.41 0.469 0.521];
+Vout_noR=[0.57 0.57 0.168 0.41 0.47 0.521];
+figure;
+plot(Vin,Vout,'-o','LineWidth',1.5);hold on;
+plot(Vin,Vout_noR,'-s','LineWidth',1.5);
+grid on;
+xlabel('Vin (V)');
+ylabel('Vout (V)');
+title('Vout Comparison');
+legend('With R_{out}(470\Omega)','Without R_{out}','Location','best');
+xlim([0 5]);
